@@ -1,0 +1,129 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+  --cor-branco: #ffffff;
+  --cor1: #F5EBEB;
+  --cor2: #E4D0D0;
+  --cor3: #D5B4B4;
+  --cor4: #867070;
+  --cor-preto: #000000;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: var(--cor-branco);
+  font-family: "Atkinson Hyperlegible Mono", serif;
+}
+
+header {
+  text-align: center;
+  border-bottom: 2px solid var(--cor4);
+  background-image: linear-gradient(to right, var(--cor3), transparent, var(--cor3));
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.479);
+}
+
+.header-logo {
+  max-width: 260px;
+}
+
+nav {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 2px solid var(--cor4);
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.479);
+}
+
+nav > a {
+  text-decoration: none;
+  color: var(--cor4);
+  font-size: 1.3em;
+  padding: 10px;
+  font-weight: 400;
+}
+
+nav a:hover {
+  background-color: var(--cor4);
+  color: var(--cor1);
+  border-radius: 5px;
+}
+
+.div-lpbeauty {
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.2em;
+  background-color: var(--cor1);
+  border-bottom: 2px solid var(--cor4);
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.479);
+  display: ;
+}
+
+.img-lpbeauty {
+  width: 100%;
+  margin-top: 20px;
+  max-width: 1900px;
+}
+
+.titulo-destaques {
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  background-image: linear-gradient(to right, var(--cor3), transparent, var(--cor3));
+  color: var(--cor4);
+  font-size: 2em;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.lista-produtos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.produto {
+  width: 25%;
+  text-align: center; 
+  margin: 10px 0 ;
+}
+.produto-img {
+  width: 97%;
+  max-width: 800px;
+  margin: auto;
+}
+.protuto-nome {
+  font-size: 1.2em;
+  font-weight: 400;
+  margin-top: 5px;
+}
+.protuto-preco {
+  font-size: 1.5em;
+  font-weight: 600;
+  padding: 5px;
+}
+.protuto-status {
+  background-color: #6e866e;
+  color: var(--cor-branco);
+  border-radius: 20px;
+  font-size: 1em;
+  font-weight: 600;
+  padding: 10px;
+  width: 95%;
+  
+} 
+.protuto-status:hover {
+  background-color: var(--cor3);
+  color: #6e866e;
+}
+
+footer {
+  background-color: var(--cor4);
+  color: var(--cor1);
+  padding: 20px;
+  text-align: center;
+  font-size: 1.3em;
+}
