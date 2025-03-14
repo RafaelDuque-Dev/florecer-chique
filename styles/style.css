@@ -7,6 +7,8 @@
   --cor2: #E4D0D0;
   --cor3: #D5B4B4;
   --cor4: #867070;
+  --cor-fundo-indisponivel: #6e6b6b;
+  --cor-fundo-disponivel: #6e866e;
   --cor-preto: #000000;
 }
 
@@ -59,7 +61,6 @@ nav a:hover {
   background-color: var(--cor1);
   border-bottom: 2px solid var(--cor4);
   box-shadow: 0 0px 5px rgba(0, 0, 0, 0.479);
-  display: ;
 }
 
 .img-lpbeauty {
@@ -83,16 +84,20 @@ nav a:hover {
 .lista-produtos {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
 }
 
 .produto {
-  width: 25%;
+  max-width: 300px;
+  min-width: 200px;
+  width: 20%;
   text-align: center; 
-  margin: 10px 0 ;
+  margin: 10px;
 }
 .produto-img {
   width: 97%;
-  max-width: 800px;
+  max-width: 300px;
   margin: auto;
 }
 .protuto-nome {
@@ -101,21 +106,35 @@ nav a:hover {
   margin-top: 5px;
 }
 .protuto-preco {
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-weight: 600;
-  padding: 5px;
 }
 .protuto-status {
-  background-color: #6e866e;
+  background-color: var(--cor-fundo-disponivel);
   color: var(--cor-branco);
   border-radius: 20px;
   font-size: 1em;
   font-weight: 600;
   padding: 10px;
   width: 95%;
-  
 } 
+
+.protuto-status-no {
+  background-color: var(--cor-fundo-indisponivel);
+  color: var(--cor-branco);
+  border-radius: 20px;
+  font-size: 1em;
+  font-weight: 600;
+  padding: 10px;
+  width: 95%;
+}
+
 .protuto-status:hover {
+  background-color: var(--cor3);
+  color: #6e866e;
+}
+
+.protuto-status-no:hover {
   background-color: var(--cor3);
   color: #6e866e;
 }
@@ -123,7 +142,8 @@ nav a:hover {
 footer {
   background-color: var(--cor4);
   color: var(--cor1);
-  padding: 20px;
+  padding: 10px;
   text-align: center;
-  font-size: 1.3em;
+  font-size: 1em;
+  margin-top: 20px;
 }
