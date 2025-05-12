@@ -24,12 +24,12 @@ body {
 header {
   text-align: center;
   border-bottom: 2px solid var(--cor4);
-  background-image: linear-gradient(to right, var(--cor3), transparent, var(--cor3));
+  background-image: linear-gradient(to right, var(), transparent, var(--cor3));
   box-shadow: 0 0px 5px rgba(0, 0, 0, 0.479);
 }
 
 .header-logo {
-  max-width: 260px;
+  max-width: 180px;
 }
 
 nav {
@@ -37,6 +37,7 @@ nav {
   padding: 20px;
   border-bottom: 2px solid var(--cor4);
   box-shadow: 0 0px 5px rgba(0, 0, 0, 0.479);
+
 }
 
 nav > a {
@@ -54,6 +55,7 @@ nav a:hover {
 }
 
 .div-lpbeauty {
+  display: none;
   margin: auto;
   padding: 20px;
   text-align: center;
@@ -85,7 +87,11 @@ nav a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: auto;
+  background-image: url('../img/elegant_gold_hand_painted_alcohol_ink_background_design_2801.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .produto {
@@ -94,22 +100,24 @@ nav a:hover {
   width: 20%;
   text-align: center; 
   margin: 10px;
+  
 }
 .produto-img {
   width: 97%;
-  max-width: 300px;
   margin: auto;
+  border-image: 1px var(--cor4);
+  border-radius: 50%;
 }
-.protuto-nome {
+.produto-nome {
   font-size: 1.2em;
   font-weight: 400;
   margin-top: 5px;
 }
-.protuto-preco {
+.produto-preco {
   font-size: 1.3em;
   font-weight: 600;
 }
-.protuto-status {
+.produto-status {
   background-color: var(--cor-fundo-disponivel);
   color: var(--cor-branco);
   border-radius: 20px;
@@ -119,7 +127,7 @@ nav a:hover {
   width: 95%;
 } 
 
-.protuto-status-no {
+.produto-status-no {
   background-color: var(--cor-fundo-indisponivel);
   color: var(--cor-branco);
   border-radius: 20px;
@@ -129,15 +137,26 @@ nav a:hover {
   width: 95%;
 }
 
-.protuto-status:hover {
+.produto-status:hover {
   background-color: var(--cor3);
   color: #6e866e;
 }
 
-.protuto-status-no:hover {
+.status-indisponivel{
+  background-color: var(--cor-fundo-indisponivel);
+  color: var(--cor-branco);
+  border-radius: 20px;
+  font-size: 1em;
+  font-weight: 600;
+  padding: 10px;
+  width: 95%;
+}
+
+.produto-status-no:hover {
   background-color: var(--cor3);
   color: #6e866e;
 }
+
 
 footer {
   background-color: var(--cor4);
