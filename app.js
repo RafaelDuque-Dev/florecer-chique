@@ -15,7 +15,9 @@ function carregarDestaques() {
       const imagemAlternativa = produto.imagem2; // Substitua pelo caminho da imagem ao passar o mouse
 
       produtoDiv.innerHTML = `
+        
         <img class="produto-img" src="${imagemPadrao}" alt="${produto.nome}">
+        <p class="produto-id">Cod:${produto.id}</p>
         <p class="produto-nome">${produto.nome}</p>
         <p class="produto-preco">${produto.preco}</p>
         <p class="produto-status">${produto.status}</p>

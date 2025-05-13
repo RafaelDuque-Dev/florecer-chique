@@ -24,8 +24,16 @@ body {
 header {
   text-align: center;
   border-bottom: 2px solid var(--cor4);
-  background-image: linear-gradient(to right, var(), transparent, var(--cor3));
+  background-image: linear-gradient(to right, var(--cor3), transparent, var(--cor3));
   box-shadow: 0 0px 5px rgba(0, 0, 0, 0.479);
+}
+
+.header-cabecalho {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 10px;
+  background-color: var(--cor3);
 }
 
 .header-logo {
@@ -46,6 +54,9 @@ nav > a {
   font-size: 1.3em;
   padding: 10px;
   font-weight: 400;
+  margin: 0 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 nav a:hover {
@@ -78,8 +89,6 @@ nav a:hover {
   background-image: linear-gradient(to right, var(--cor3), transparent, var(--cor3));
   color: var(--cor4);
   font-size: 2em;
-  margin-top: 20px;
-  margin-bottom: 5px;
   font-weight: 500;
 }
 
@@ -92,6 +101,7 @@ nav a:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  padding-top: 20px;
 }
 
 .produto {
@@ -108,6 +118,15 @@ nav a:hover {
   border-image: 1px var(--cor4);
   border-radius: 50%;
 }
+
+.produto-id {
+  font-size: 1em;
+  font-weight: 400;
+  margin-top: 5px;
+  color: var(--cor4);
+  margin-top: 10px;
+}
+
 .produto-nome {
   font-size: 1.2em;
   font-weight: 400;
